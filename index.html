@@ -22,9 +22,9 @@
     <div class="container">
         <form class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter a city for Weather ..." id="city-name">
+                <input type="text" class="form-control" placeholder="Enter a city for Weather ..." id="city-name" onkeypress="search()">
                 <div class="input-group-append">
-                    <button type="button" class="btn btn-danger" id="search">Search</button>
+                    <button type="button" class="btn btn-danger" onclick="search()">Search</button>
                 </div>
             </div>
         </form>

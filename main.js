@@ -17,11 +17,10 @@ function weather(city) {
   })
 };
 
-const search = document.getElementById('search');
-search.addEventListener('click', function () {
+function search() {
   cityName = document.getElementById('city-name').value;
   if (cityName == '') {
     cityName = 'Dhaka';
   }
   weather(cityName);
-});
+}
