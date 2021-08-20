@@ -21,7 +21,7 @@ const search = document.getElementById('search');
 search.addEventListener('click', function () {
   cityName = document.getElementById('city-name').value;
   if (cityName == '') {
-    cityName = 'Sirajganj';
+    cityName = 'Dhaka';
   }
   weather(cityName);
 });
