@@ -10,8 +10,7 @@ function weather(city) {
     weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     
     const temp = document.getElementById('temperature');
-    temp.innerText = data.main.temp;
-    
+    temp.innerText = Math.round(data.main.temp);
     const lead = document.querySelector('.lead');
     lead.innerText = data.weather[0].main;
   })
