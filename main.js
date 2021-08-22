@@ -17,7 +17,7 @@ function weather(city) {
 };
 
 function search() {
-  cityName = document.getElementById('city-name').value;
+  let cityName = document.getElementById('city-name').value;
   if (cityName == '') {
     cityName = 'Dhaka';
   }
