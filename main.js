@@ -1,5 +1,6 @@
 function weatherCheck(city) {
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=cca1f8b5c1a43e6f8324b6feb572149d`)
+  const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=cca1f8b5c1a43e6f8324b6feb572149d`;
+  fetch(url)
   .then(res => res.json())
   .then(data => {
     
