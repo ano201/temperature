@@ -1,4 +1,4 @@
-function weather(city) {
+function weatherCheck(city) {
   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=cca1f8b5c1a43e6f8324b6feb572149d`)
   .then(res => res.json())
   .then(data => {
@@ -14,12 +14,12 @@ function weather(city) {
     const lead = document.querySelector('.lead');
     lead.innerText = data.weather[0].main;
   })
-};
+}
 
 function search() {
   let cityName = document.getElementById('city-name').value;
   if (cityName == '') {
     cityName = 'Dhaka';
   }
-  weather(cityName);
+  weatherCheck(cityName);
 }
